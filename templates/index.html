@@ -3,7 +3,7 @@
 <head xmlns="http://www.w3.org/1999/xhtml">
     <meta charset="UTF-8">
     <title>Car Price Predictor</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,15 +15,66 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-
+    
 </head>
-<body class="bg-dark">
+<body class="youj">
 
-<div class="container">
+<!-- NAVBAR -->
+<div class="all">
+     
+    <nav class="navbar">
+        <div class="logo"><img src="./log.png" alt="logo"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="line">
+            <span class="material-symbols-outlined md-36">
+                ☰  
+            </span>
+        </label>
+        <label for="click" class="cross">
+            <span class="material-symbols-outlined md-37">
+                ×
+            </span>
+        </label>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a>
+                <ul>
+                    <li style="border-bottom:1px white  solid; "><a href="./pages/aboutTeam.html">About&nbsp;Team</a></li>
+                    <li><a href="#about">About&nbsp;Us</a></li>
+                </ul>
+            </li>
+           <!-- <li><a href="#tournaments">Events</a></li>-->
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="./pages/club.html">Categories</a></li>
+            <li><a href="#contact">Contact&nbsp;Us</a>
+                <ul>
+                    <li style="border-bottom:1px white  solid;" ><a href="./pages/contact.html" >Contact&nbsp;Team</a></li>
+                    <li><a href="#contact">Contact&nbsp;Us</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>  
+
+    <section class="firstsection" id="home">
+        <h1>Buy Your Dream Car</h1>
+            <br>
+            <br>
+        <div class="buttons">
+            <button class="btn" id="ulte-se" onclick="showDiv();" style="text-decoration:none; color:black"><b>Predict</b></button>
+            <button class="btn" id="sidhe-se" onclick="url('https://github.com/Mehrotra01/Mini-Project1')"><a href="https://github.com/Mehrotra01/Mini-Project1" style="text-decoration:none; color:black"><b>Github<b></a></button>
+        </div>
+    </section>
+<script>
+    function showDiv(){
+        document.getElementById("only").style.display="block";
+    }
+</script>
+<div class="container one" id="only">
     <div class="row">
         <div class="card mt-50" style="width: 100%; height: 100%">
             <div class="card-header" style="text-align: center">
-                <h1>Welcome to Car Price Predictor</h1>
+                <h1>Welcome to Car Price Predictor</h1><a href="./index.html"  style="float:right;margin-top:-5%;text-decoration:none;font-size:24px;color:black;">×</a>
             </div>
             <div class="card-body">
                 <div class="col-12" style="text-align: center">
@@ -80,7 +131,6 @@
         </div>
     </div>
 </div>
-
 <script>
 
     function load_car_models(company_id,car_model_id)
@@ -95,7 +145,6 @@
             {
                 {% for model in car_models %}
                     {% if company in model %}
-
                         var newOption= document.createElement("option");
                         newOption.value="{{ model }}";
                         newOption.innerHTML="{{ model }}";
@@ -105,18 +154,14 @@
             }
         {% endfor %}
     }
-
     function form_handler(event) {
-        event.preventDefault(); // Don't submit the form normally
+        event.preventDefault();
     }
     function send_data()
     {
         document.querySelector('form').addEventListener("submit",form_handler);
-
         var fd=new FormData(document.querySelector('form'));
-
         var xhr= new XMLHttpRequest({mozSystem: true});
-
         xhr.open('POST','/predict',true);
         document.getElementById('prediction').innerHTML="Wait! Predicting Price.....";
         xhr.onreadystatechange = function(){
@@ -125,14 +170,10 @@
 
             }
         };
-
         xhr.onload= function(){};
-
         xhr.send(fd);
     }
 </script>
-
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
