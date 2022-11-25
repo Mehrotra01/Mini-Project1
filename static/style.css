@@ -161,7 +161,7 @@ nav     label{
 }
 .firstsection{
     background: url('https://wallpapercave.com/wp/5IQEnQ2.jpg') no-repeat center center/cover;
-    height:100vh;
+    height:110vh;
     animation: slideshow 24s infinite;
     animation-delay: 5s;
     display: flex;
