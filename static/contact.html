@@ -17,50 +17,43 @@
   <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css"> -->
 
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
- 
   <nav class="navbar">
-    <div class="logo"><img src="../images/logo.png" alt="logo"></div>
+    <div class="logo"><img src="./log.png" alt="logo" onclick="url('https://github.com/Mehrotra01/Mini-Project1')">
+    </div>
     <input type="checkbox" id="click">
     <label for="click" class="line">
-        <span class="material-symbols-outlined md-36">
-            menu
-        </span>
+      <span class="material-symbols-outlined md-36">
+        ☰
+      </span>
     </label>
     <label for="click" class="cross">
-        <span class="material-symbols-outlined md-37">
-            close
-        </span>
+      <span class="material-symbols-outlined md-37">
+        ×
+      </span>
     </label>
     <ul class="navlist">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#about">About</a>
-            <ul>
-                <li style="border-bottom:1px white  solid; "><a href="../pages/aboutTeam.html">About&nbsp;Team</a></li>
-                
-            </ul>
-        </li>
-        <!-- <li><a href="#tournaments">Tournaments</a></li>
-        <li><a href="#gallery">Gallery</a></li> -->
-        <li><a href="../pages/club.html">Categories</a></li>
-        <li><a href="#contact">Contact&nbsp;Us</a>
-            <ul>
-                <li style="border-bottom:1px white  solid;" ><a href="../pages/contact.html" >Contact&nbsp;Team</a></li>
-                <li><a href="#contactform">Contact&nbsp;Us</a></li>
-            </ul>
-        </li>
+      <li><a href="/">Home</a></li>
+      <li><a href="./About.html">About</a>
+      </li>
+      <!-- <li><a href="#tournaments">Events</a></li>-->
+      <!-- <li><a href="#gallery">Gallery</a></li> -->
+      <li><a href="./compare.html">Compare</a></li>
+      <li><a href="./contact.html">Contact&nbsp;Us</a>
+        <!-- <ul>
+                  <li style="border-bottom:1px white  solid;"><a href="./pages/contact.html">Contact&nbsp;Team</a>
+                  </li>
+                  <li><a href="#contact">Contact&nbsp;Us</a></li>
+              </ul> -->
+      </li>
     </ul>
-    <span class="search-btn">
-        <span class="material-symbols-outlined md-36">
-            search
-        </span>
-    </span>
-</nav>  
+
+  </nav>
 
 
   <!-- Header -->
@@ -118,7 +111,7 @@
               <div class="icon-box">
                 <span class="icon fa fa-clock"></span>
               </div>
-              <ul class="info">
+              <ul class="info" style="margin-bottom: -5px;">
                 <li>time to contact</li>
                 <li>9:00 AM to 12:00 PM
 
@@ -143,7 +136,7 @@
 
 
   <section>
-    
+
     <div class="container">
       <span class="big-circle"></span>
       <img src="/pages/contactImages/shape.png" class="square" alt="" />
@@ -158,8 +151,8 @@
           <div class="info">
             <div class="information">
               <img src="/pages/contactImages/location.png" class="icon" alt="" />
-              
-              
+
+
               <p>GLA univeristy,17km Stone, NH-2, Mathura-Delhi Road Mathura, Chaumuhan, Uttar Pradesh 281406</p>
             </div>
             <div class="information">
@@ -190,7 +183,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
@@ -213,14 +206,14 @@
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message"  class="input" id="message"></textarea>
+              <textarea name="message" class="input" id="message"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" id="submit"  class="btn" />
+            <input type="submit" id="submit" class="btn" />
           </form>
         </div>
-      
+
       </div>
     </div>
 
@@ -232,7 +225,7 @@
       <div class="column about">
         <h3 class="a2">ABOUT US</h3>
         <p>
-          feel free 
+          feel free
         </p>
       </div>
       <div class="column links">
@@ -265,27 +258,27 @@
       </div>
     </div>
 
-    <div class="row secondary">
+    <div class="row1 secondary">
       <div>
         <p>
-            <i class="fas fa-phone phone" ></i>
+          <i class="fas fa-phone phone"></i>
         </p>
         <!-- <p>6398753795</p> -->
         <a href="#" style="text-decoration: none; color:white">9767467475</a>
       </div>
       <div>
-        <p><i class="fas fa-envelope email" "></i></p>
-        <a href="mailto:oppoide.2022@gmail.com" style="text-decoration: none; color:white">oppoide.2022@gmail.com</a>
+        <p><i class="fas fa-envelope email" ></i></p>
+        <a href=" mailto:oppoide.2022@gmail.com" style="text-decoration: none; color:white">oppoide.2022@gmail.com</a>
       </div>
       <div>
-        <p><i class="fas fa-map-marker-alt location"  "></i></p>
+        <p><i class="fas fa-map-marker-alt location" ></i></p>
         <p>GLA</p>
       </div>
       <div>
-          <p><i class="fab fa-twitter twitter" ></i></p>
-          <a href="#" style="text-decoration: none; color:white">twitter</a>
-          <a href=""></a>
-        </div>
+          <p><i class=" fab fa-twitter twitter"></i></p>
+        <a href="#" style="text-decoration: none; color:white">twitter</a>
+        <a href=""></a>
+      </div>
     </div>
     <div class="row copyright">
       <p>Copyright &copy; 2022 Oppoide| All Rights Reserved</p>
@@ -293,86 +286,86 @@
   </footer>
 
 
-    
+
 
   <script src="../JS/contact.js"></script>
   <script type="module">
-     
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
- 
- 
- const firebaseConfig = {
-   apiKey: "AIzaSyDeCTOZ3YX3lrNlLpfLXUgvMVQmK_DqpSM",
-   authDomain: "contactform-575d2.firebaseapp.com",
-   projectId: "contactform-575d2",
-   storageBucket: "contactform-575d2.appspot.com",
-   messagingSenderId: "386143471802",
-   appId: "1:386143471802:web:44d6a3f6e9e462e96cda83"
- };
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
 
 
- const app = initializeApp(firebaseConfig);
+    const firebaseConfig = {
+      apiKey: "AIzaSyDeCTOZ3YX3lrNlLpfLXUgvMVQmK_DqpSM",
+      authDomain: "contactform-575d2.firebaseapp.com",
+      projectId: "contactform-575d2",
+      storageBucket: "contactform-575d2.appspot.com",
+      messagingSenderId: "386143471802",
+      appId: "1:386143471802:web:44d6a3f6e9e462e96cda83"
+    };
+
+
+    const app = initializeApp(firebaseConfig);
   </script>
-  
-
-<script type="module">
-    var username,email,phone,message;
-import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
-
-const db = getDatabase();  
-// send data to database
 
 
+  <script type="module">
+    var username, email, phone, message;
+    import { getDatabase, ref, get, set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
 
-var Uname = document.getElementById('UserName');
-var Phone = document.getElementById('phone');
-var Email = document.getElementById('email');
-var Message = document.getElementById('message');
-
-
-document.getElementById('contactform').addEventListener("submit", insertData);
+    const db = getDatabase();
+    // send data to database
 
 
-function submitForm(e) {
-     e.preventDefault();
-   
-     //   Get input Values
-     username = Uname.value;
-     email = Email.value;
-     phone = Phone.value;
-     message = Message.value;
-    
-    
-     console.log(Uname, phone, email, message);
-   
-     // saveContactInfo(name, email, message);
-   
-     // document.querySelector(".contact-form").reset();
-     document.getElementById('contactform').reset();
 
-   }
+    var Uname = document.getElementById('UserName');
+    var Phone = document.getElementById('phone');
+    var Email = document.getElementById('email');
+    var Message = document.getElementById('message');
 
-   function insertData(e){
-    e.preventDefault();
-    submitForm(e);
-  
-    set(ref(db, "data/"+ email),{
-      EMAIL:  email,
-      PHONE: phone,
-      USERNAME: Uname,
-      MESSAGE: message
-  
-    }).then(()=>{
-      alert("your feedback stored succesfully");
-    }).catch((error)=>{alert("unsuccesfully",error)});  
-    document.getElementById('contactform').reset(); 
-    document.getElementById('contactform').reset();
-  
-  }
-   
+
+    document.getElementById('contactform').addEventListener("submit", insertData);
+
+
+    function submitForm(e) {
+      e.preventDefault();
+
+      //   Get input Values
+      username = Uname.value;
+      email = Email.value;
+      phone = Phone.value;
+      message = Message.value;
+
+
+      console.log(Uname, phone, email, message);
+
+      // saveContactInfo(name, email, message);
+
+      // document.querySelector(".contact-form").reset();
+      document.getElementById('contactform').reset();
+
+    }
+
+    function insertData(e) {
+      e.preventDefault();
+      submitForm(e);
+
+      set(ref(db, "data/" + email), {
+        EMAIL: email,
+        PHONE: phone,
+        USERNAME: Uname,
+        MESSAGE: message
+
+      }).then(() => {
+        alert("your feedback stored succesfully");
+      }).catch((error) => { alert("unsuccesfully", error) });
+      document.getElementById('contactform').reset();
+      document.getElementById('contactform').reset();
+
+    }
+
 
    // firebase project create
-</script>
+  </script>
 
 </body>
 
