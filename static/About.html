@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo2.png">
+  
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+<link rel="stylesheet" href="./about.css">
+  
+</head>
+
+<body>
+  
+    <div class="all">
+
+        <nav class="navbar">
+            <div class="logo"><img src="./log.png" alt="logo"
+                    onclick="url('https://github.com/Mehrotra01/Mini-Project1')"></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="line">
+                <span class="material-symbols-outlined md-36">
+                    ☰
+                </span>
+            </label>
+            <label for="click" class="cross">
+                <span class="material-symbols-outlined md-37">
+                    ×
+                </span>
+            </label>
+            <ul class="navlist">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li style="border-bottom:1px white  solid; "><a
+                                href="./pages/aboutTeam.html">About&nbsp;Team</a></li>
+                        <li><a href="#about">About&nbsp;Us</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="#tournaments">Events</a></li>-->
+                <!-- <li><a href="#gallery">Gallery</a></li> -->
+                <li><a href="{{url_for('static', filename='compare.html')}}">Compare</a></li>
+                <li><a href="#contact">Contact&nbsp;Us</a>
+                    <ul>
+                        <li style="border-bottom:1px white  solid;"><a href="./pages/contact.html">Contact&nbsp;Team</a>
+                        </li>
+                        <li><a href="#contact">Contact&nbsp;Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+ 
+
+  <!-- ABOUT US -->
+  <section id="about" data-aos="fade-down">
+    <div class="section-aniket">
+        <div class="container-aniket">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div class="image-section">
+
+                <img src="./R.jpg" alt="">
+            </div>
+            <div class="content-section">
+                <div class="content">
+                  <h3>Site that connects Seeker to keeper !</h3>
+                  <p> This provides an overview of where the Site has come from and the key people involved in creating it. Often histories are written for a major event,
+                    such as the 50th or 100th anniversary of founding but here we are starting at the 0th platform.
+                  </p>
+                      <br>
+                      <br>
+                    <div class="button">
+                        <a href="./About.html">Read More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<br>
+  <br>
+  
+  <!-- section 1 : priyanshu + Srashti -->
+  <section class="secone">
+    <header>
+      <h1>MEET THE TEAM</h1>
+    </header>
+
+    <!-- <h1>Our Team</h1> -->
+    <div class="row box">
+      <div class="base col-md-3 col-sm-6">
+        <img class="bg " src="https://github.com/Santosh7017/Web-De-Project/blob/main/images/image-removebg-preview.png?raw=true" alt="">
+        <img class="pic" src="https://github.com/Santosh7017/Web-De-Project/blob/main/images/srashti.png?raw=true">
+        <h3>Srashti Shukla</h3>
+        <h4>Web Developer</h4>
+        <!-- <h4>201500706</h4> -->
+        <div class="icon">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      
+      <div class="base col-md-3 col-sm-6">
+        <img class="bg " src="https://github.com/Santosh7017/Web-De-Project/blob/main/images/image-removebg-preview.png?raw=true" alt="">
+        <img class="pic" src="../images/aryan.png">
+        <h3>Aryan Singh</h3>
+        <h4>Web Developer</h4>
+        <!-- <h4>201500153</h4> -->
+        <div class="icon">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+
+      <br><br><br>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Section 2: aniket-riya -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class=heading>
+          <h1>OUR SERVICES</h1>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="image">
+          <img src="./photo/6.JPG" alt="">
+          <div class="details">
+            <h2>CULTURAL <span>EVENT</span></h2>
+            <p>The arts and other manifestations of human intellectual achievement regarded collectively in a series of events!!</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./photo/4.jpg" alt="">
+          <div class="details">
+            <h2>SPORTS <span>EVENT</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./photo/1.JPG" alt="">
+          <div class="details">
+            <h2>WORK<span>SHOPS</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="image">
+          <img src="./photo/5.JPG" alt="">
+          <div class="details">
+            <h2>SEMI<span>NARS</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./photo/2.jpg" alt="">
+          <div class="details">
+            <h2>CONVO<span>CATIONS</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./photo/3.JPG" alt="">
+          <div class="details">
+            <h2>FE<span>ST</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <div class="row primary">
+      <div class="column about">
+        <h3 class="a2">ABOUT US</h3>
+        <p>
+          We provide you with each and every update of the ongoing and upcoming events, 
+          So you would never miss any chance to race your fingers on keyboard or to race your feet on the dance floor.
+<br>
+          We are Oppoid..!!
+        </p>
+      </div>
+      <div class="column links">
+        <h3 class="a2">Quick Links</h3>
+        <ul class="a1">
+          <li>
+            <a href="# ">HOME</a>
+          </li>
+          <li>
+            <a href="#">BLOGS</a>
+          </li>
+          <li>
+            <a href="#"> PRIVACY POLICY</a>
+          </li>
+          <li>
+            <a href="#">CONTACT US</a>
+          </li>
+          <li>
+            <a href="#">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column subscribe">
+        <h3 class="a2">Join our Newsletter</h3>
+        <div>
+          <input class="footerInput" type="email" placeholder="Enter your email " />
+          <button class="footerButton">Subscribe</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row1 secondary">
+      <div>
+        <p>
+            <i class="fas fa-phone phone" ></i>
+        </p>
+        <!-- <p>6398753795</p> -->
+        <a href="#" style="text-decoration: none; color:white">9767467475</a>
+      </div>
+      <div>
+        <p><i class="fas fa-envelope email" "></i></p>
+        <a href="mailto:oppoide.2022@gmail.com" style="text-decoration: none; color:white">oppoide.2022@gmail.com</a>
+      </div>
+      <div>
+        <p><i class="fas fa-map-marker-alt location"  "></i></p>
+        <p>GLA</p>
+      </div>
+      <div>
+          <p><i class="fab fa-twitter twitter" ></i></p>
+          <a href="#" style="text-decoration: none; color:white">twitter</a>
+          <a href=""></a>
+        </div>
+    </div>
+    <div class="row copyright">
+      <p>Copyright &copy; 2022 Oppoide| All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
