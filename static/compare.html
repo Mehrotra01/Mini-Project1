@@ -97,11 +97,16 @@
                         </th>
                     </tr>
                     <tr>
+                        <th>Suggestion</th>
+                        <td id="sugges1"></td>
+                        <td id="sugges2"></td>
+                    </tr>
+                    <tr>
                         <th>Product Model</th>
                         <td id="model1"></td>
                         <td id="model2"></td>
                     </tr>
-                    <tr>
+                                        <tr>
                         <th>Year</th>
                         <td id="year1"></td>
                         <td id="year2"></td>
@@ -174,7 +179,80 @@
                 </table>
             </div>
         </div>
-
+        <br>
+        <footer>
+            <div class="row primary">
+              <div class="column about">
+                <h3 class="a2">ABOUT US</h3>
+                <p>
+                  We provide you with each and every update of the ongoing and upcoming events, 
+                  So you would never miss any chance to race your fingers on keyboard or to race your feet on the dance floor.
+        <br>
+                  We are Oppoid..!!
+                </p>
+              </div>
+              <div class="column links">
+                <h3 class="a2">Quick Links</h3>
+                <ul class="a1">
+                  <li>
+                    <a href="# ">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#">BLOGS</a>
+                  </li>
+                  <li>
+                    <a href="#"> PRIVACY POLICY</a>
+                  </li>
+                  <li>
+                    <a href="#">CONTACT US</a>
+                  </li>
+                  <li>
+                    <a href="#">GALLERY</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column subscribe">
+                <h3 class="a2">Join our Newsletter</h3>
+                <div>
+                  <input class="footerInput" type="email" placeholder="Enter your email " />
+                  <button class="footerButton">Subscribe</button>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="row1 secondary">
+              <div>
+                <p>
+                    <i class="fas fa-phone phone" ></i>
+                </p>
+                <!-- <p>6398753795</p> -->
+                <a href="#" style="text-decoration: none; color:white">9767467475</a>
+              </div>
+              <div>
+                <p><i class="fas fa-envelope email" "></i></p>
+                <a href="mailto:oppoide.2022@gmail.com" style="text-decoration: none; color:white">oppoide.2022@gmail.com</a>
+              </div>
+              <div>
+                <p><i class="fas fa-map-marker-alt location"  "></i></p>
+                <p>GLA</p>
+              </div>
+              <div>
+                  <p><i class="fab fa-twitter twitter" ></i></p>
+                  <a href="#" style="text-decoration: none; color:white">twitter</a>
+                  <a href=""></a>
+                </div>
+            </div>
+            <div class="row copyright">
+              <p>Copyright &copy; 2022 Oppoide| All Rights Reserved</p>
+            </div>
+          </footer>
+        
+        
+        
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
 
 
 
@@ -200,6 +278,13 @@
             function item1(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select2) {
+                    if((document.getElementById("hp1").innerText)>(document.getElementById("hp2").innerText)){
+                        document.getElementById("sugges1").innerText="Buy";
+                    }else
+                    {
+                        document.getElementById("sugges1").innerText="";
+                    }
+
                     document.getElementById("model1").innerHTML = product[a].Model
                     document.getElementById("year1").innerHTML = product[a].Year
                     document.getElementById("fuel1").innerHTML = product[a].Engine_Fuel_Type
@@ -226,11 +311,18 @@
             function item2(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select1) {
+                    if((document.getElementById("hp2").innerText)>(document.getElementById("hp1").innerText)){
+                        document.getElementById("sugges2").innerText="Buy";
+                    }else
+                    {
+                        document.getElementById("sugges2").innerText="";
+                    }
+
                     document.getElementById("model2").innerHTML = product[a].Model
                     document.getElementById("year2").innerHTML = product[a].Year
-                    document.getElementById("fuel2").innerHTML = product[a].Engine_Fule_Type
+                    document.getElementById("fuel2").innerHTML = product[a].Engine_Fuel_Type
                     document.getElementById("hp2").innerHTML = product[a].Engine_HP
-                    document.getElementById("cylin2").innerHTML = product[a].Engibe_Cylinders
+                    document.getElementById("cylin2").innerHTML = product[a].Engine_Cylinders
                     document.getElementById("trans2").innerHTML = product[a].Transmission_Type
                     document.getElementById("wheel2").innerHTML = product[a].Driven_Wheels
                     document.getElementById("door2").innerHTML = product[a].Number_of_Doors
