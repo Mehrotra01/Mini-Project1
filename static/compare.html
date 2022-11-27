@@ -275,11 +275,7 @@
             function item1(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select2) {
-                    if ((document.getElementById("hp1").innerText) > (document.getElementById("hp2").innerText)) {
-                        document.getElementById("sugges1").innerText = "Buy";
-                    } else {
-                        document.getElementById("sugges1").innerText = "";
-                    }
+                    
 
                     document.getElementById("model1").innerHTML = product[a].Model
                     document.getElementById("year1").innerHTML = product[a].Year
@@ -296,6 +292,15 @@
                     document.getElementById("city1").innerHTML = product[a].city_mpg
                     document.getElementById("pop1").innerHTML = product[a].Popularity
                     document.getElementById("msrp1").innerHTML = product[a].MSRP
+                    if ((document.getElementById("hp1").textContent)>(document.getElementById("hp2").textContent)) {
+                        console.log(document.getElementById("hp1").textContent);
+                        console.log(document.getElementById("hp2").textContent);
+                        document.getElementById("sugges1").innerText = "Buy";
+                        document.getElementById("sugges2").innerText="";
+                    } else {
+                        document.getElementById("sugges2").innerText="Buy";
+                        document.getElementById("sugges1").innerText = "";
+                    }
                 }
                 else {
                     document.getElementById("modell").src = product[0].Model
@@ -307,11 +312,7 @@
             function item2(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select1) {
-                    if ((document.getElementById("hp2").innerText) > (document.getElementById("hp1").innerText)) {
-                        document.getElementById("sugges2").innerText = "Buy";
-                    } else {
-                        document.getElementById("sugges2").innerText = "";
-                    }
+                   
 
                     document.getElementById("model2").innerHTML = product[a].Model
                     document.getElementById("year2").innerHTML = product[a].Year
@@ -328,6 +329,15 @@
                     document.getElementById("city2").innerHTML = product[a].city_mpg
                     document.getElementById("pop2").innerHTML = product[a].Popularity
                     document.getElementById("msrp2").innerHTML = product[a].MSRP
+                    if ((document.getElementById("hp1").textContent)>(document.getElementById("hp2").textContent)) {
+                        console.log(document.getElementById("hp1").textContent);
+                        console.log(document.getElementById("hp2").textContent);
+                        document.getElementById("sugges1").innerText = "Buy";
+                        document.getElementById("sugges2").innerText="";
+                    } else {
+                        document.getElementById("sugges2").innerText="Buy";
+                        document.getElementById("sugges1").innerText = "";
+                    }
                 }
                 else {
                     document.getElementById("model2").src = product[0].Model
