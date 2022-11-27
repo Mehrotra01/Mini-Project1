@@ -17,6 +17,9 @@ body{
 background: -webkit-linear-gradient(to right, #2C5364, #203A43, #091216);  
 background: linear-gradient(to bottom,  #09181e,#172c35, #203A43, #09181e); */
 }
+.iii{
+    width:500px;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -24,7 +27,7 @@ background: linear-gradient(to bottom,  #09181e,#172c35, #203A43, #09181e); */
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     text-transform: uppercase;
     opacity: 0.;
     z-index: 1000;

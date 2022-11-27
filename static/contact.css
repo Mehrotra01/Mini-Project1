@@ -1,19 +1,33 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url('./R.jpg')  center center/cover;
+  height:120vh;
+  /* background-size:cover; */
+  animation: slideshow 24s infinite;
+  animation-delay: 5s;
+  /* display: flex; */
+  flex-direction: column;
+  /* padding: 3px 100px; */
+  justify-content: center;
+  align-items: center;
+  /* background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #091216);  
+background: linear-gradient(to bottom,  #09181e,#172c35, #203A43, #09181e); */
 }
 .navbar{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: rgb(14, 11, 7, 1) no-repeat center center/cover;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 15vh;
   text-transform: uppercase;
-  /* opacity: 0.; */
+  opacity: 0.;
   z-index: 1000;
 }
 ::-webkit-scrollbar{
@@ -31,6 +45,10 @@ nav     label{
   display: none;
 }
 @media (max-width: 900px){
+  .logo{
+      margin:4%;
+      width:35%;
+  }
   .navbar{
       display: block
   }
@@ -38,8 +56,7 @@ nav     label{
       display: block;
       font-size: 36px;
       position: absolute;
-      top: 40px;
-      left: 130px;
+      right: 25px;
       color: white;
       cursor: pointer;
   }
@@ -48,7 +65,7 @@ nav     label{
       font-size: 37px;
       position: absolute;
       top: 40px;
-      left: 130px;
+      right: 13px;
       color: white;
       cursor: pointer;
   }
@@ -85,19 +102,16 @@ nav     label{
 
 }
 .logo{
-  /* border: 5px solid green; */
   display: inline-block;
-  margin: 20px;
-  width: 70px;
+  width: 90px;
 }
 .logo img{
-  width: 80%;
+  width: 100%;
 }
 
 .navlist{
   float: right;
   margin-left: 0px;
-  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +126,7 @@ nav     label{
   
 }
 .navlist li a{
+  border: 20%;
   display: block;
   text-decoration: none;
   color: white;
@@ -121,13 +136,14 @@ nav     label{
 .navlist li a:hover, a.active{
   color: #000000;
   border-radius: 5px;
-  background-color: #1aeeef;
+  background-color: #47e3e3;
   box-shadow: 0 0 20px #1aeeef;
 }
 
 .navlist ul{
+  border: 10%;
   position: absolute;
-  top: 68px;
+  top: 60px;
   display: none;
   opacity: 0.9;
   border-radius: 4%;
@@ -136,7 +152,6 @@ nav     label{
 .navlist li:hover > ul{
   display: block;
   background-color: #000000;
-  padding-left: 0;
 }
 
 
@@ -159,6 +174,108 @@ nav     label{
   right: 20px;
   color: white;
 }
+
+@keyframes slideshow{
+  0%{
+      background: url('./R.jpg')  center center/cover; 
+  }
+  25%{
+      background: url('https://wallpapercave.com/wp/wp9015696.jpg') center center/cover; 
+  }
+  50%{
+      background: url('https://cdn.wallpapersafari.com/67/0/u3cPzW.jpg') center center/cover; 
+  }
+}
+
+
+.btn{
+  border: none;
+  box-shadow: 0 0 1px 1px rgb(5, 5, 5);
+  border-radius: 20px;
+  margin: 30px;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  border:1px solid white;
+  color:rgb(252, 250, 250) !important;
+  background:linear-gradient(rgba(18, 88, 93, 0.7) 20%,rgba(6, 47, 53, 0.7) 30%, hsl(10 0% 0%/ 1));
+  opacity: 0.9;
+}
+.btn:hover{
+  background:linear-gradient(rgba(16, 224, 9, 0.7) 50%, hsl(10 0% 0%/ 1));
+  color: white;
+}
+.btn:hover .one{
+  opacity: 1;
+  display: block;
+}
+@media (max-width: 800px){
+  .logo{
+      margin:2%;
+      width:30%;
+  }
+  .firstsection{
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      padding: 3px 5px;
+      justify-content: center;
+      align-items: center;
+  }
+  .firstsection h1{
+      width: 400px;
+      font-size: 2rem;
+      font-weight: 550;
+  }
+  .firstsection p{
+      padding: 8px 65px;
+      font-size: 1rem;
+  }
+}
+@media (max-width: 440px){
+  .firstsection h1{
+      width: 250px;
+  }
+  .firstsection p{
+      padding: 8px 20px;
+      font-size: 1rem;
+  }
+  .btn{
+      width: 90px;
+      margin: 8px;
+  }
+}
+#ulte-se{
+  animation: ulte-se 2s ease-out;
+}
+#ulte-se:hover .one{
+  visibility: visible;
+}
+@keyframes ulte-se{
+  0%{
+      opacity: 0.3;
+      transform: translateX(-500px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+#sidhe-se{
+  animation: sidhe-se 2s ease-out;
+}
+@keyframes sidhe-se{
+  0%{
+      opacity: 0.3;
+      transform: translateX(500px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
 /* Contact cards */
 
 
@@ -167,7 +284,7 @@ nav     label{
     padding: 90px 0px 60px;
     /* background-color: ; */
     /* background-image: url('https://th.bing.com/th/id/OIP.E9iPyTLlln60HynLC4JCBQHaE8?w=270&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7'); */
-    background: url('https://wallpapercave.com/wp/5IQEnQ2.jpg') no-repeat center center/cover;
+    /* background: url('https://wallpapercave.com/wp/5IQEnQ2.jpg') no-repeat center center/cover; */
 
 
 }
@@ -175,22 +292,27 @@ nav     label{
 .contact-section .cards-block {
     position: relative;
     /* opacity: rbg(); */
+    color: white;
   }
   
   .contact-section .cards-block .cards {
     position: relative;
     text-align: center;
     margin-bottom: 30px;
+    color: white;
+    
   }
   
   .contact-section .cards .inner {
-  background-color: rgba(7, 5, 5, 0.4);
+    color: white;
+  /* background-color: rgba(7, 5, 5, 0.4); */
     cursor: pointer;
     position: relative;
     display: block;
     padding: 45px 20px;
     /* opacity: 50; */
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: linear-gradient(to top,rgb(72, 72, 72,.5), rgb(14,11,7,.9));
     /* box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.07); */
     transition: all 300ms ease;
   
@@ -198,7 +320,7 @@ nav     label{
 }
 
 .contact-section .cards:hover .inner {
-    background: rgb(0 0 0 0.80);
+    /* background: rgb(0 0 0 0.80); */
     box-shadow: 4px 15px 46px -10px #63d0a2;
   /* opacity: 0.5; */
     transition: 1s;
@@ -210,7 +332,7 @@ nav     label{
     left: 0;
     bottom: 0;
     width: 100%;
-    border-bottom: 3px solid #63d0a2;
+    border-bottom: 3px solid #0e5559;
     transition: all 1000ms ease;
     transform: scaleX(0);
   
@@ -250,7 +372,7 @@ nav     label{
   
   .contact-section .cards:hover .icon-box .icon {
   opacity: 1;
-  background: #63d0a2;
+  background: #0e5e6e;
   color: #ffffff;
 }   
 
@@ -270,7 +392,8 @@ nav     label{
 
 .contact-section .cards ul li a {
   opacity: 1;
-  color: #222222;
+  color:white;
+
 }
 
 
@@ -309,7 +432,7 @@ overflow: hidden;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: rgb(49, 49, 49);
+/* background-color: rgb(49, 49, 49); */
 }
 
 .form {
@@ -325,13 +448,14 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-form {
-background-color: #1abc9c;
+background-color: #175e68;
 position: relative;
 }
 
+
 .circle {
 border-radius: 50%;
-background: linear-gradient(135deg, transparent 20%, #149279);
+background: linear-gradient(135deg, transparent 20%, #175e68);
 background-color: rgb(49, 49, 49);
 
 position: absolute;
@@ -358,7 +482,7 @@ content: "";
 position: absolute;
 width: 26px;
 height: 26px;
-background-color: #1abc9c;
+background-color: #175e68;;
 transform: rotate(45deg);
 top: 50px;
 left: -13px;
@@ -464,7 +588,7 @@ width: 10%;
 opacity: 0;
 transition: 0.3s;
 height: 5px;
-background-color: #1abc9c;
+background-color: #175e68;;
 top: 50%;
 transform: translateY(-50%);
 }
@@ -496,7 +620,7 @@ position: relative;
 }
 
 .contact-info .title {
-color: #1abc9c;
+color: #2893a1;;
 }
 
 .text {
@@ -534,7 +658,7 @@ margin-top: 0.5rem;
 width: 35px;
 height: 35px;
 border-radius: 5px;
-background: linear-gradient(45deg, #1abc9c, #149279);
+background: linear-gradient(45deg, #175e68, #149279);
 color: #fff;
 text-align: center;
 line-height: 35px;
@@ -551,14 +675,14 @@ content: "";
 position: absolute;
 width: 110px;
 height: 100px;
-border: 22px solid #1abc9c;
+border: 22px solid ;
 border-radius: 50%;
 bottom: -77px;
 right: 50px;
 opacity: 0.3;
 }
 
-.big-circle {
+/* .big-circle {
 position: absolute;
 width: 500px;
 height: 500px;
@@ -566,10 +690,10 @@ border-radius: 50%;
 background:  linear-gradient(to bottom, #1cd4af, #159b80);
 bottom: 50%;
 right: 50%;
-transform: translate(-40%, 38%);
+transform: translate(-40%, 38%); */
 /* color: #000000; */
 /* background-color: #000000; */
-}
+/* } */
 
 .big-circle:after {
 content: "";

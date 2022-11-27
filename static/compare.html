@@ -47,7 +47,7 @@
                 </span>
             </label>
             <ul class="navlist">
-                <li><a href="/">Home</a></li>
+                <li><a href="../templates/index.html">Home</a></li>
                 <li><a href="./About.html">About</a>
                 </li>
                 <!-- <li><a href="#tournaments">Events</a></li>-->
@@ -180,11 +180,12 @@
               <div class="column about">
                 <h3 class="a2">ABOUT US</h3>
                 <p>
-                  We provide you with each and every update of the ongoing and upcoming events,
-                  So you would never miss any chance to race your fingers on keyboard or to race your feet on the dance floor.
-                  <br>
-                  We are Oppoid..!!
-                </p>
+                    Site that connects Seeker to keeper !
+                      <p> This predicts and suggests the best price and the car one should buy, an overview of cars ans the key people involved in creating it.
+                        Often histories are written for a major event, such as the 50th or 100th anniversary of founding but here we are starting at the 0th platform.
+                      </p>
+                    
+                  </p>
               </div>
               <div class="column links">
                 <h3 class="a2">Quick Links</h3>
@@ -274,11 +275,7 @@
             function item1(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select2) {
-                    if ((document.getElementById("hp1").innerText) > (document.getElementById("hp2").innerText)) {
-                        document.getElementById("sugges1").innerText = "Buy";
-                    } else {
-                        document.getElementById("sugges1").innerText = "";
-                    }
+                    
 
                     document.getElementById("model1").innerHTML = product[a].Model
                     document.getElementById("year1").innerHTML = product[a].Year
@@ -295,6 +292,15 @@
                     document.getElementById("city1").innerHTML = product[a].city_mpg
                     document.getElementById("pop1").innerHTML = product[a].Popularity
                     document.getElementById("msrp1").innerHTML = product[a].MSRP
+                    if ((document.getElementById("hp1").textContent)>(document.getElementById("hp2").textContent)) {
+                        console.log(document.getElementById("hp1").textContent);
+                        console.log(document.getElementById("hp2").textContent);
+                        document.getElementById("sugges1").innerText = "Buy";
+                        document.getElementById("sugges2").innerText="";
+                    } else {
+                        document.getElementById("sugges2").innerText="Buy";
+                        document.getElementById("sugges1").innerText = "";
+                    }
                 }
                 else {
                     document.getElementById("modell").src = product[0].Model
@@ -306,11 +312,7 @@
             function item2(a) {
                 var select2 = document.getElementById("select2").value;
                 if (a != select1) {
-                    if ((document.getElementById("hp2").innerText) > (document.getElementById("hp1").innerText)) {
-                        document.getElementById("sugges2").innerText = "Buy";
-                    } else {
-                        document.getElementById("sugges2").innerText = "";
-                    }
+                   
 
                     document.getElementById("model2").innerHTML = product[a].Model
                     document.getElementById("year2").innerHTML = product[a].Year
@@ -327,6 +329,15 @@
                     document.getElementById("city2").innerHTML = product[a].city_mpg
                     document.getElementById("pop2").innerHTML = product[a].Popularity
                     document.getElementById("msrp2").innerHTML = product[a].MSRP
+                    if ((document.getElementById("hp1").textContent)>(document.getElementById("hp2").textContent)) {
+                        console.log(document.getElementById("hp1").textContent);
+                        console.log(document.getElementById("hp2").textContent);
+                        document.getElementById("sugges1").innerText = "Buy";
+                        document.getElementById("sugges2").innerText="";
+                    } else {
+                        document.getElementById("sugges2").innerText="Buy";
+                        document.getElementById("sugges1").innerText = "";
+                    }
                 }
                 else {
                     document.getElementById("model2").src = product[0].Model
