@@ -421,10 +421,12 @@ footer {
   .copyright p {
 	font-size: 0.9em;
 	text-align: center;
+    position: relative;
+    left: 35%;
   }
   @media screen and (max-width: 850px) {
 	.row.primary {
-	  grid-template-columns: 1fr;
+	  grid-template-columns: 1fr 1fr 1fr;
 	}
 	.row.secondary {
 	  flex-direction: row;

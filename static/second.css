@@ -315,7 +315,7 @@ td{
 	/* background-image: linear-gradient(45deg, black, grey); */
 	color: wheat;
 	font-size: 14px;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
   }
   * {
 	font-family: "Poppins", sans-serif;
@@ -325,14 +325,14 @@ td{
   }
   .row {
 	padding: 1.5rem .5rem;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
   }
   .row.primary {
 	display: grid;
 	grid-template-columns:  1fr 1fr 1fr;
 	align-items: stretch;
     /* width: 95%; */
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     /* flex-direction: column-reverse; */
   }
   .column {
@@ -413,6 +413,8 @@ td{
   .copyright p {
 	font-size: 0.9em;
 	text-align: center;
+    position: relative;
+    left: 41%;
   }
   @media screen and (max-width: 850px) {
 	.row.primary {
